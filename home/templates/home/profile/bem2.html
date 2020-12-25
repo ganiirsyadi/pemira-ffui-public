@@ -1,0 +1,52 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'home/css/profil_detail.css' %}" />
+{% endblock css %} 
+{% block title %}
+  Visi & Misi Calon
+{% endblock title %}
+{% block content %} {% include 'navbar.html' %}
+<div id="wrapper" class="d-flex align-items-center flex-column">
+  <div class="center">
+    <div class="detail-row d-flex justify-content-center align-items-start">
+      <div class="detail-col">
+        <h1>Visi :</h1>
+        <div class="box bg-maroon mb-3">
+          <p>
+            Menjadikan BEM FF UI sebagai lembaga yang kolaboratif bersama mahasiswa dan masyarakat demi sinergi dalam menciptakan inovasi yang bermanfaat bagi FF UI, UI, dan Indonesia.
+          </p>
+        </div>
+        <h1>Misi :</h1>
+        <div class="box bg-maroon">
+          <ol>
+            <li>
+              Membangun internal BEM FF UI yang berlandaskan kekeluargaan dan bernafaskan profesionalisme.
+            </li>
+            <li>
+              Menguatkan dan mengefektifkan media aspirasi untuk mahasiswa.
+            </li>
+            <li>
+              Memfasilitasi pengembangan minat, bakat dan keilmuan mahasiswa.
+            </li>
+            <li>
+              Membangun relasi secara  sinergis dengan berbagai elemen masyarakat
+            </li>
+          </ol>
+        </div>
+      </div>
+      <img
+        class="cover"
+        src="{% static 'home/images/profile/bem2.png' %}"
+        alt=""
+      />
+    </div>
+    <a
+      href="{% url 'home:profil_calon_bem_url' %}"
+      class="btn btn-border align-self-start mt-4"
+      >Kembali</a
+    >
+  </div>
+</div>
+<footer id="social-only">
+  {% include 'footer_social_only.html' %}
+  {% include 'footer_mobile.html' %}
+</footer> {% endblock content %}

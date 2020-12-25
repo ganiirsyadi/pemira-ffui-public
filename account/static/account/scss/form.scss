@@ -1,0 +1,204 @@
+#form {
+  padding-top: 100px;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 250px;
+  h1 {
+    font-family: "Baloo 2", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 140%;
+    /* or 67px */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #e6bb89;
+    margin-bottom: 22px;
+  }
+  img:nth-child(2) {
+    width: 350px;
+  }
+  form {
+    margin-top: 44px;
+    .form-group {
+      width: 400px;
+      label {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+
+        /* Secondary Colors/Cod Gray */
+
+        color: #131313;
+      }
+      input {
+        box-sizing: border-box;
+        padding: 12px 20px;
+        color: #131313;
+        &:focus {
+          border: 2px solid #e6bb89;
+          box-shadow: none;
+        }
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+      #error {
+        color: #dc4123 !important;
+      }
+    }
+    .btn {
+      padding: 10px 16px !important;
+      width: 92px;
+    }
+    .creamy-card {
+      width: fit-content;
+      padding: 32px 64px;
+      background: #fdfae0;
+      border-radius: 10px;
+      box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      .top {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+
+        /* Secondary Colors/Cod Gray */
+
+        color: #131313;
+        margin-bottom: 6px;
+      }
+      .bottom {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 140%;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        /* Elevation/00dp */
+
+        color: #121212;
+        margin-bottom: 12px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    .upload-text {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+
+      color: #000000;
+    }
+    .upload-box {
+      display: flex;
+      cursor: pointer;
+      margin-top: 8px;
+      width: 454px;
+      padding: 76px;
+      border: 2px dashed #000000;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+    .file-box {
+      background: #ededed;
+      display: none;
+      cursor: pointer;
+      margin-top: 8px;
+      width: 454px;
+      padding: 76px;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+      border-radius: 5px;
+      #filename {
+        max-width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .ask {
+    margin-top: 32px;
+    align-self: flex-start;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: left;
+    a {
+      color: #9c3932;
+      font-weight: 700;
+      text-decoration: underline;
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+  .half-circle {
+    width: 70vw;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+// Tablet
+@media (max-width: 768.98px) {
+  #form {
+    min-height: 100vh;
+  }
+}
+
+// Phone
+@media (max-width: 575.98px) {
+  #form {
+    padding-left: 40px;
+    padding-right: 40px;
+    form {
+      width: 100%;
+      .form-group {
+        width: 100%;
+      }
+      .creamy-card {
+        width: 100%;
+        overflow: hidden;
+        padding: 32px;
+      }  
+      .upload-text {
+        font-size: 14px;
+        line-height: 23px;  
+      }
+      .upload-box {
+        width: 85vw;
+        padding: 52px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+      .file-box {
+        width: 85vw;
+        padding: 52px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+    }
+  }
+}

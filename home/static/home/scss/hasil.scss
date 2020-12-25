@@ -1,0 +1,98 @@
+#hasil {
+  padding-top: 100px;
+  #title {
+    font-family: "Baloo 2", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 140%;
+    /* identical to box height, or 56px */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    /* maroon */
+
+    color: #8a4742;
+  }
+  #subtitle {
+    font-family: "Baloo 2", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    /* cream */
+
+    color: #e6bb89;
+  }
+  .box {
+    margin-top: 52px;
+    max-width: 680px;
+    h3 {
+      font-family: 'Baloo 2', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 140%;
+      /* identical to box height, or 34px */
+
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      /* maroon */
+
+      color: #8a4742;
+      margin-bottom: 24px;
+    }
+    canvas {
+      margin-bottom: 16px;
+    }
+    .dpt {
+      font-family: 'Baloo 2', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 140%;
+      /* identical to box height, or 34px */
+
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      /* maroon */
+
+      color: #505050;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+// Phone
+@media (max-width: 575.98px) {
+  #hasil {
+    padding: 24px;
+    padding-top: 100px;
+    #title {
+      font-size: 28px !important;
+    }
+    #subtitle {
+      font-size: 20px !important;
+    }
+    .box {
+      h3 {
+        font-size: 16px !important;
+      }
+    }  
+    .box {
+      width: 100%;
+    }  
+  }
+}

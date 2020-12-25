@@ -1,0 +1,47 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'home/css/profil_calon.css' %}" />
+{% endblock css %} {% block title %} Profil Calon {% endblock title %}
+{%  block content %} 
+{% include 'navbar.html' %}
+<div class="profile profile-bpm">
+  <h1>Profil Calon Anggota Independen BPM</h1>
+  <div class="d-flex justify-content-center profile-row">
+    <div class="d-flex flex-column align-items-center profile-col mx-md-2 mx-lg-4">
+      <h2>1</h2>
+      <div class="card-profile">
+        <div class="d-flex justify-content-center">
+          <img src="{% static 'home/images/profile/p-bpm1.png' %}" alt="" srcset="">
+        </div>
+        <h5>Krisastra <br> Halim</h5>
+        <a href="{% url 'home:profil_detail_url' 'bpm1' %}">Visi & Misi &#10230;</a>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-center profile-col mx-md-2 mx-lg-4">
+      <h2>2</h2>
+      <div class="card-profile">
+        <div class="d-flex justify-content-center">
+          <img src="{% static 'home/images/profile/p-bpm2.png' %}" alt="" srcset="">
+        </div>
+        <h5>Syafura <br> Az-zahra</h5>
+        <a href="{% url 'home:profil_detail_url' 'bpm2' %}">Visi & Misi &#10230;</a>
+      </div>
+    </div><div class="d-flex flex-column align-items-center profile-col mx-md-2 mx-lg-4">
+      <h2>3</h2>
+      <div class="card-profile">
+        <div class="d-flex justify-content-center">
+          <img src="{% static 'home/images/profile/p-bpm3.png' %}" alt="" srcset="">
+        </div>
+        <h5>Farhan <br> Eviansyah</h5>
+        <a href="{% url 'home:profil_detail_url' 'bpm3' %}">Visi & Misi &#10230;</a>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <a href="{% url 'home:profil_calon_bem_url' %}" class="btn btn-fill btn-switch">Lihat Calon Ketua BEM</a>
+  </div>
+</div>
+<footer id="social-only">
+  {% include 'footer_social_only.html' %}
+  {% include 'footer_mobile.html' %}
+</footer>
+{% endblock content %}

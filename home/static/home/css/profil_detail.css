@@ -1,0 +1,109 @@
+#wrapper {
+  padding-top: 176px;
+}
+
+#wrapper .center {
+  width: 900px;
+}
+
+#wrapper .center .bg-maroon {
+  background: #8a4742;
+}
+
+#wrapper .center .bg-green {
+  background: #555c53;
+}
+
+#wrapper .center .detail-row h1 {
+  font-family: "Baloo 2", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140%;
+  /* or 50px */
+  color: #894642;
+}
+
+#wrapper .center .detail-row .text-green {
+  color: #555c53;
+}
+
+#wrapper .center .detail-row .box {
+  padding: 32px;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+#wrapper .center .detail-row .box ol {
+  padding-left: 20px;
+}
+
+#wrapper .center .detail-row .box li,
+#wrapper .center .detail-row .box p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 28px */
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+#wrapper .center .detail-row .cover {
+  margin-top: 50px;
+  width: 280px;
+  margin-left: 32px;
+}
+
+#wrapper .btn-border {
+  padding: 10px 24px !important;
+}
+
+@media (max-width: 768.98px) {
+  #wrapper .center {
+    width: 85vw;
+  }
+  #wrapper .center .detail-row {
+    width: 100%;
+  }
+  #wrapper .center .detail-row .box ol {
+    padding-left: 20px;
+  }
+  #wrapper .center .detail-row .box li,
+#wrapper .center .detail-row .box p {
+    font-size: 14px;
+  }
+  #wrapper .center .detail-row .cover {
+    width: 220px;
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #wrapper {
+    padding-top: 80px;
+  }
+  #wrapper .center {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  #wrapper .center .detail-row {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center !important;
+  }
+  #wrapper .center .detail-row .box ol {
+    padding-left: 20px;
+  }
+  #wrapper .center .detail-row .box li,
+#wrapper .center .detail-row .box p {
+    font-size: 14px;
+  }
+  #wrapper .center .detail-row .cover {
+    width: 75vw;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}

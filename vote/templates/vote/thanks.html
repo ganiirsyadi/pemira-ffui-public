@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
+{% endblock css %} {% block title %} PEMIRA FF UI 2020 {% endblock title %}
+{%block content %} {% include 'navbar.html' %}
+<div id="hero">
+  <img
+    class="vector-dot"
+    src="{% static 'home/images/vector-dot.svg' %}"
+    alt=""
+    srcset=""
+  />
+  <h1 id="thanks">
+    Terima kasih <br />
+    Telah Memilih!
+  </h1>
+  <a href="{% url 'home:home_url' %}" class="btn btn-fill mt-3"
+    >Kembali ke Beranda</a
+  >
+</div>
+<footer id="social-only">
+  {% include 'footer_social_only.html' %} 
+  {% include 'footer_mobile.html' %}  
+</footer>
+{% endblock content %}

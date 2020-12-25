@@ -1,0 +1,34 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+  <a class="navbar-brand m-0" href="{% url 'home:home_url' %}"><img src="{% static 'home/images/logo.svg' %}" alt=""><p class="mb-0 nav-title">Pemira FF UI</p></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto">
+      <li class="nav-item {% if request.path == '/' %} active {% endif %}">
+        <a class="nav-link" href="{% url 'home:home_url' %}">Beranda<span class="sr-only"></span></a>
+      </li> 
+      <li id="nav-profile" class="nav-item {% if request.path == '/profile-bem/' or request.path == '/profile-bpm/' %} active {% endif %}">
+        <a class="nav-link" href="{% url 'home:profil_calon_bem_url' %}">Profil Calon</a>
+      </li>
+      <li id="nav-result" class="nav-item {% if request.path == '/hasil/' %} active {% endif %}">
+        <a class="nav-link" href="{% url 'home:hasil_url' %}">Lihat Hasil</a>
+      </li>
+      <li class="nav-item {% if request.path == '/account/' %} active {% endif %}">
+        <a class="nav-link" href="{% url 'account:account_url' %}">Akun</a>
+      </li>
+    </ul>
+    
+    <div id="nav-btns" class="d-flex align-items-center justify-content-center">
+      {% if request.user.is_authenticated %}
+      <p class="mb-0 user-name">Halo, {{ request.user.get_first_name }}!</p>
+      <a href="{% url 'account:logout_url' %}" class="btn btn-border">Keluar</a>
+      {% else %}
+      <a href="{% url 'account:login_url' %}" class="btn btn-border">Masuk</a>
+      <a id="nav-register" href="{% url 'account:register_url' %}" class="btn btn-fill ml-3 d-none">Daftar</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>

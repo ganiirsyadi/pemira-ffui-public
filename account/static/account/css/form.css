@@ -1,0 +1,213 @@
+#form {
+  padding-top: 100px;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 250px;
+}
+
+#form h1 {
+  font-family: "Baloo 2", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 140%;
+  /* or 67px */
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #e6bb89;
+  margin-bottom: 22px;
+}
+
+#form img:nth-child(2) {
+  width: 350px;
+}
+
+#form form {
+  margin-top: 44px;
+}
+
+#form form .form-group {
+  width: 400px;
+}
+
+#form form .form-group label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  /* Secondary Colors/Cod Gray */
+  color: #131313;
+}
+
+#form form .form-group input {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  color: #131313;
+}
+
+#form form .form-group input:focus {
+  border: 2px solid #e6bb89;
+  box-shadow: none;
+}
+
+#form form .form-group input::placeholder {
+  font-size: 14px;
+}
+
+#form form .form-group #error {
+  color: #dc4123 !important;
+}
+
+#form form .btn {
+  padding: 10px 16px !important;
+  width: 92px;
+}
+
+#form form .creamy-card {
+  width: fit-content;
+  padding: 32px 64px;
+  background: #fdfae0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#form form .creamy-card .top {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  /* Secondary Colors/Cod Gray */
+  color: #131313;
+  margin-bottom: 6px;
+}
+
+#form form .creamy-card .bottom {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  /* Elevation/00dp */
+  color: #121212;
+  margin-bottom: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#form form .upload-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+#form form .upload-box {
+  display: flex;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 454px;
+  padding: 76px;
+  border: 2px dashed #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#form form .file-box {
+  background: #ededed;
+  display: none;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 454px;
+  padding: 76px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#form form .file-box #filename {
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#form .ask {
+  margin-top: 32px;
+  align-self: flex-start;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: left;
+}
+
+#form .ask a {
+  color: #9c3932;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#form .ask a:hover {
+  opacity: .9;
+}
+
+#form .half-circle {
+  width: 70vw;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 768.98px) {
+  #form {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #form form {
+    width: 100%;
+  }
+  #form form .form-group {
+    width: 100%;
+  }
+  #form form .creamy-card {
+    width: 100%;
+    overflow: hidden;
+    padding: 32px;
+  }
+  #form form .upload-text {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  #form form .upload-box {
+    width: 85vw;
+    padding: 52px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  #form form .file-box {
+    width: 85vw;
+    padding: 52px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}

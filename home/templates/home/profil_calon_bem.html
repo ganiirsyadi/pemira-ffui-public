@@ -1,0 +1,57 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'home/css/profil_calon.css' %}" />
+{% endblock css %} {% block title %} Profil Calon {% endblock title %} 
+{% block content %} {% include 'navbar.html' %}
+<div class="profile profile-bem">
+  <h1>Profil Calon Ketua BEM</h1>
+  <div class="d-flex justify-content-center profile-row">
+    <div class="d-flex flex-column align-items-center profile-col mx-md-2 mx-lg-4">
+      <h2>1</h2>
+      <div class="card-profile">
+        <div class="d-flex justify-content-center">
+          <img src="{% static 'home/images/profile/p-bem1.png' %}" alt="" srcset="" />
+        </div>
+        <h5>Trixie Putri <br> Padita</h5>
+        <a href="{% url 'home:profil_detail_url' 'bem1' %}"
+          >Visi & Misi &#10230;</a
+        >
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-center profile-col mx-md-2 mx-lg-4">
+      <h2>2</h2>
+      <div class="card-profile">
+        <div class="d-flex justify-content-center">
+          <img src="{% static 'home/images/profile/p-bem2.png' %}" alt="" srcset="" />
+        </div>
+        <h5>Mohammad Najmi <br> Shobari</h5>
+        <a href="{% url 'home:profil_detail_url' 'bem2' %}"
+          >Visi & Misi &#10230;</a
+        >
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-center profile-col mx-md-2 mx-lg-4">
+      <h2>3</h2>
+      <div class="card-profile">
+        <div class="d-flex justify-content-center">
+          <img src="{% static 'home/images/profile/p-bem3.png' %}" alt="" srcset="" />
+        </div>
+        <h5>M. Hibban <br> Arasy</h5>
+        <a href="{% url 'home:profil_detail_url' 'bem3' %}"
+          >Visi & Misi &#10230;</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <a
+      href="{% url 'home:profil_calon_bpm_url' %}"
+      class="btn btn-fill btn-switch"
+      >Lihat Calon AI BPM</a
+    >
+  </div>
+</div>
+<footer id="social-only">
+  {% include 'footer_social_only.html' %}
+  {% include 'footer_mobile.html' %}
+</footer>
+{% endblock content %}

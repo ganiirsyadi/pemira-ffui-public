@@ -1,0 +1,257 @@
+#hero {
+  margin-top: 52px;
+  background-image: url("../images/hero-bg.svg");
+  background-size: auto 600px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding: 0 88px;
+  padding-top: 52px;
+  padding-bottom: 40px;
+  height: 600px;
+}
+
+#hero .vector-dot {
+  height: 56px;
+}
+
+#hero h1 {
+  margin-top: 16px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 140%;
+  /* or 163% */
+  font-feature-settings: "liga" off;
+  /* Text / Gray 900 */
+  color: #18191f;
+}
+
+#hero h1 span {
+  color: #8a4742;
+}
+
+#hero .date {
+  margin-top: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8a4742;
+  margin-bottom: 12px;
+}
+
+#hero .timer h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 110%;
+  /* or 67px */
+  text-align: center;
+  color: #bd8e58;
+  margin-bottom: 0;
+}
+
+#hero .timer p {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-align: center;
+  color: #bd8e58;
+  margin-bottom: 12px;
+}
+
+#hero .timer-info {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 22px */
+  /* Brand / Purple */
+  color: #8a4742;
+}
+
+#hero .account-info {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  /* identical to box height, or 133% */
+  font-feature-settings: "liga" off;
+  color: #18191f;
+}
+
+#hero .btn {
+  font-size: 16px;
+}
+
+#hero h1#thanks {
+  margin-top: 44px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 140%;
+  /* or 136% */
+  font-feature-settings: "liga" off;
+  /* maroon */
+  color: #8a4742;
+}
+
+#introduction {
+  height: fit-content;
+  background-color: #fefbe1;
+  padding: 120px 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#introduction .card-box {
+  width: 630px;
+  padding: 48px;
+}
+
+#introduction .card-box h2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 140%;
+  /* identical to box height, or 133% */
+  font-feature-settings: "liga" off;
+  color: #8a4742;
+  margin-bottom: 20px;
+}
+
+#introduction .card-box p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 150% */
+  font-feature-settings: "liga" off;
+  /* Text / Gray 900 */
+  color: #18191f;
+}
+
+#introduction .vote-ilustration {
+  width: 350px;
+}
+
+#tutorial {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+#tutorial h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 140%;
+  /* identical to box height, or 133% */
+  font-feature-settings: "liga" off;
+  color: #8a4742;
+  margin-bottom: 60px;
+}
+
+#tutorial .video img:nth-child(1) {
+  margin-right: 100px;
+  margin-top: 100px;
+  align-self: flex-start;
+  width: 52px;
+}
+
+#tutorial .video img:nth-child(3) {
+  margin-left: 100px;
+  margin-bottom: 100px;
+  align-self: flex-end;
+  width: 52px;
+}
+
+#tutorial .video iframe {
+  width: 760px;
+  height: 456px;
+}
+
+#tutorial .steps {
+  margin-top: 160px;
+}
+
+#tutorial .steps p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 108% */
+  font-feature-settings: "liga" off;
+  /* maroon */
+  color: #8a4742;
+  margin-top: 16px;
+  width: 200px;
+}
+
+@media (max-width: 768.98px) {
+  #hero {
+    background-image: url("../images/hero-bg-t.png");
+    background-size: contain;
+  }
+  #introduction {
+    flex-direction: column-reverse;
+  }
+  #introduction .card-box {
+    margin-top: 44px;
+    width: 60vw;
+  }
+  #tutorial .video iframe {
+    width: 80vw;
+    height: 45vw;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #hero {
+    padding: 32px;
+    height: fit-content;
+    background-image: url("../images/hero-bg-m.png");
+    background-size: 100vw auto;
+    background-position: bottom;
+    padding-top: 8px;
+    padding-bottom: 300px;
+  }
+  #hero .vector-dot {
+    display: none;
+  }
+  #introduction .vote-ilustration {
+    width: 80vw;
+  }
+  #introduction .card-box {
+    margin-top: 40px !important;
+    width: 85vw;
+  }
+  #tutorial .steps {
+    margin-top: 40px;
+  }
+  #tutorial .steps .dashline {
+    display: none !important;
+  }
+  #tutorial .steps .steps-box {
+    margin-top: 12px;
+    flex-direction: row !important;
+  }
+  #tutorial .steps .steps-box p {
+    margin-left: 24px !important;
+  }
+}

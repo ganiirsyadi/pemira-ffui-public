@@ -1,0 +1,158 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
+{% endblock css %} {% block title %} PEMIRA FF UI 2020 {% endblock title %}
+{%block content %} {% include 'navbar.html' %}
+<div id="hero">
+  <img
+    class="vector-dot"
+    src="{% static 'home/images/vector-dot.svg' %}"
+    alt=""
+    srcset=""
+  />
+  <h1>
+    Selamat Datang <br />
+    Di
+    <span
+      >Pemira <br class="d-md-none" />
+      IKM FF UI</span
+    >
+  </h1>
+  <p id="timer-date" class="date"></p>
+  <div class="timer d-flex">
+    <div class="d-flex flex-column align-items-center">
+      <h2 id="timer-days">00</h2>
+      <p>Hari</p>
+    </div>
+    <div class="mx-2 d-flex flex-column align-items-center">
+      <h2>:</h2>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <h2 id="timer-hours">00</h2>
+      <p>Jam</p>
+    </div>
+    <div class="mx-2 d-flex flex-column align-items-center">
+      <h2>:</h2>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <h2 id="timer-minutes">00</h2>
+      <p>Menit</p>
+    </div>
+    <div class="mx-2 d-flex flex-column align-items-center">
+      <h2>:</h2>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <h2 id="timer-seconds">00</h2>
+      <p>Detik</p>
+    </div>
+  </div>
+  <p id="timer-info" class="timer-info"></p>
+  {% if info == 'UNVERIFIED' %}
+  <p class="mb-0 mt-4 account-info">
+    Akun anda sedang diproses untuk verifikasi
+  </p>
+  {% elif info == 'PROFILE' %}
+  <a href="{% url 'home:profil_calon_bem_url' %}" class="btn btn-fill mt-3">Profil Calon</a>
+  {% elif info == 'VOTE' %}
+  <div class="d-fles mt-4">
+    <a href="{% url 'vote:otp_url' %}" class="btn btn-fill">Voting Sekarang</a>
+  </div>
+  {% elif info == 'DONEVOTE' %}
+  <p class="mb-0 mt-4 account-info">
+    Terima kasih atas suara yang telah Anda berikan
+  </p>
+  {% elif info == 'RESULT' %}
+  <div class="d-fles mt-5">
+    <a href="{% url 'home:hasil_url' %}" class="btn btn-fill">Lihat Hasil</a>
+  </div>
+  {% elif info == 'CLOSEREG' %}
+  <div class="d-fles mt-4">
+    <a href="{% url 'account:login_url' %}" class="btn btn-fill">Masuk</a>
+  </div>
+  {% else %}
+  <div class="d-fles mt-4">
+    <a href="{% url 'account:login_url' %}" class="btn btn-border">Masuk</a>
+    <a href="{% url 'account:register_url' %}" class="btn btn-fill ml-3"
+      >Daftar</a
+    >
+  </div>
+  {% endif %}
+</div>
+<div id="introduction">
+  <div class="card-box mx-lg-4">
+    <h2>Apa itu Pemira?</h2>
+    <p class="m-0">
+      Pemira atau Pemilihan Raya IKM FF UI adalah mekanisme demokrasi tahunan
+      yang diselenggarakan oleh mahasiswa FF UI di bawah pengawasan BPM FF UI
+      yang bertujuan untuk memilih Ketua BEM FF UI dan Anggota Independen BPM FF
+      UI.
+    </p>
+  </div>
+  <img
+    class="vote-ilustration mx-lg-4"
+    src="{% static 'home/images/ilustration-voting.svg' %}"
+  />
+</div>
+<div id="tutorial" class="d-flex flex-column align-items-center">
+  <h1 class="text-center">Bagaimana Cara <br class="d-md-none"> E-Vote?</h1>
+  <div class="d-flex align-items-center video">
+    <img class="d-none d-lg-block" src="{% static 'home/images/vector-dot.svg' %}" alt="" srcset="" />
+    <iframe
+      width="420"
+      height="315"
+      src="https://www.youtube.com/embed/V1f1eQLE_ao"
+    >
+    </iframe>
+    <img class="d-none d-lg-block" src="{% static 'home/images/vector-dot.svg' %}" alt="" srcset="" />
+  </div>
+  <div class="d-flex steps flex-lg-row flex-column">
+    <div class="d-flex flex-md-row flex-column">
+      <div class="d-flex flex-column steps-box">
+        <div class="d-flex">
+          <img src="{% static 'home/images/vector-circle.svg' %}" alt="" />
+          <img
+            class="dashline"
+            src="{% static 'home/images/vector-line.svg' %}"
+            alt=""
+            style="margin-left: 24px"
+          />
+        </div>
+        <p>Login dan klik <b>VOTING SEKARANG</b> pada home.</p>
+      </div>
+      <div class="d-flex flex-column ml-lg-5 ml-md-5 steps-box">
+        <div class="d-flex">
+          <img src="{% static 'home/images/vector-circle.svg' %}" alt="" />
+          <img
+            class="dashline"
+            src="{% static 'home/images/vector-line.svg' %}"
+            alt=""
+            style="margin-left: 24px"
+          />
+        </div>
+        <p>Masukkan <b>kode OTP</b> yang anda dapatkan dari Email</p>
+      </div>
+    </div>
+    <div class="d-flex flex-md-row flex-column mt-lg-0 mt-md-4">
+      <div class="d-flex flex-column ml-lg-5 steps-box">
+        <div class="d-flex">
+          <img src="{% static 'home/images/vector-circle.svg' %}" alt="" />
+          <img
+            class="dashline"
+            src="{% static 'home/images/vector-line.svg' %}"
+            alt=""
+            style="margin-left: 24px"
+          />
+        </div>
+        <p>Pilih salah satu calon Ketua BEM. Klik <b>Selanjutnya</b>.</p>
+      </div>
+      <div class="d-flex flex-column ml-lg-5 ml-md-5 steps-box">
+        <div class="d-flex">
+          <img src="{% static 'home/images/vector-circle.svg' %}" alt="" />
+        </div>
+        <p>Pilih salah satu calon Anggota Independen BPM. Klik <b>Submit</b>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'footer.html' %} {% endblock content %} {% block js %}
+<script src="{% static 'home/js/timer.js' %}"></script>
+{% endblock js %}

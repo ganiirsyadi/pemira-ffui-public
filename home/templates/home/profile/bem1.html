@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'home/css/profil_detail.css' %}" />
+{% endblock css %} {% block title %} Visi & Misi Calon {% endblock title %} 
+{% block content %} {% include 'navbar.html' %}
+<div id="wrapper" class="d-flex align-items-center flex-column">
+  <div class="center">
+    <div class="detail-row d-flex justify-content-center align-items-start">
+      <div class="detail-col">
+        <h1>Visi :</h1>
+        <div class="box bg-maroon mb-3">
+          <p>
+            Terwujudnya BEM FF UI 2021 yang kreatif, kolaboratif, dan progresif
+            yang berlandaskan kekeluargaan dalam berdedikasi bagi IKM FF UI, UI,
+            dan Indonesia.
+          </p>
+        </div>
+        <h1>Misi :</h1>
+        <div class="box bg-maroon">
+          <ol>
+            <li>
+              Menciptakan internal BEM FF UI yang solid, sinergis dan
+              profesional yang berlandaskan kekeluargaan.
+            </li>
+            <li>
+              Memfasilitasi dan mengoptimalkan potensi IKM FF UI di bidang
+              minat, bakat, dan keilmuan.
+            </li>
+            <li>
+              Membangun pergerakan mahasiswa yang inklusif dan dinamis lewat
+              aksi kreatif.
+            </li>
+            <li>
+              Membentuk birokrasi yang transparan, akuntabel, dan sistematis.
+            </li>
+            <li>Meningkatkan hubungan yang kolaboratif dan efisien dengan berbagai pihak.</li>
+          </ol>
+        </div>
+      </div>
+      <img
+        class="cover"
+        src="{% static 'home/images/profile/bem1.png' %}"
+        alt=""
+      />
+    </div>
+    <a
+      href="{% url 'home:profil_calon_bem_url' %}"
+      class="btn btn-border align-self-start mt-4"
+      >Kembali</a
+    >
+  </div>
+</div>
+<footer id="social-only">
+  {% include 'footer_social_only.html' %} {% include 'footer_mobile.html' %}
+</footer>
+{% endblock content %}

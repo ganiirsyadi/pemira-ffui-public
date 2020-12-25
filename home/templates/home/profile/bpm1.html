@@ -1,0 +1,51 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'home/css/profil_detail.css' %}" />
+{% endblock css %} 
+{% block title %}
+  Visi & Misi Calon
+{% endblock title %}
+{% block content %} {% include 'navbar.html' %}
+<div id="wrapper" class="d-flex align-items-center flex-column">
+  <div class="center">
+    <div class="detail-row d-flex justify-content-center align-items-start">
+      <div class="detail-col">
+        <h1 class="text-green">Visi :</h1>
+        <div class="box bg-green mb-3">
+          <p>
+            Mewujudkan BPM Farmasi yang inovatif, aspiratif, komunikatif dan berintegritas serta berasaskan kekeluargaan dalam mengemban kewajibannya.
+          </p>
+        </div>
+        <h1 class="text-green">Misi :</h1>
+        <div class="box bg-green">
+          <ol>
+            <li>
+              Mengoptimalkan fungsi legislatif dan pengawasan BPM.
+            </li>
+            <li>
+              Menghasilkan suatu keluaran inovatif yang solutif bagi BPM atau IKM.
+            </li>
+            <li>
+              Meningkatkan komunikasi, kedekatan dan keselarasan dengan IKM.
+            </li>
+            <li>
+              Meningkatkan solidaritas internal BPM Farmasi.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <img
+        class="cover"
+        src="{% static 'home/images/profile/bpm1.png' %}"
+        alt=""
+      />
+    </div>    <a
+      href="{% url 'home:profil_calon_bpm_url' %}"
+      class="btn btn-border align-self-start mt-4"
+      >Kembali</a
+    >
+  </div>
+</div>
+<footer id="social-only">
+  {% include 'footer_social_only.html' %}
+  {% include 'footer_mobile.html' %}
+</footer> {% endblock content %}

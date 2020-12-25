@@ -1,0 +1,129 @@
+.profile {
+  margin-top: 64px;
+  background-image: url("../images/profile-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.profile h1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #8a4742;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.profile .profile-row {
+  margin-bottom: 40px;
+}
+
+.profile .profile-row .profile-col h2 {
+  font-family: "Baloo 2", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 140%;
+  /* or 101px */
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.profile .profile-row .profile-col .card-profile {
+  margin-top: 160px;
+  background: #FFE3C1;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  position: relative;
+  width: 220px;
+  padding: 20px 20px;
+  padding-top: 88px;
+}
+
+.profile .profile-row .profile-col .card-profile img {
+  position: absolute;
+  width: 165px;
+  height: 205px;
+  top: -120px;
+}
+
+.profile .profile-row .profile-col .card-profile h5 {
+  margin-top: 8px;
+  font-family: "Baloo 2", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 39px */
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.profile .profile-row .profile-col .card-profile .btn {
+  padding: 6px 24px !important;
+}
+
+.profile .profile-row .profile-col .card-profile .btn-fill {
+  background-color: #a76e62;
+}
+
+.profile .profile-row .profile-col .card-profile .btn-fill:hover {
+  background-color: #8a4742 !important;
+  opacity: 1;
+}
+
+.profile .profile-row .profile-col .card-profile .btn-border {
+  background-color: #FDFAE0;
+}
+
+.profile .bottom-btn {
+  margin: auto;
+  width: 760px;
+}
+
+@media (max-width: 768.98px) {
+  .profile .bottom-btn {
+    width: 680px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile {
+    padding: 24px;
+  }
+  .profile h1 {
+    font-size: 28px;
+    line-height: 140%;
+    max-width: 75vw;
+  }
+  .profile .profile-row {
+    flex-direction: column;
+  }
+  .profile .profile-row .profile-col {
+    margin-bottom: 24px;
+  }
+  .profile .bottom-btn {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 32px;
+  }
+  .profile .bottom-btn button {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}

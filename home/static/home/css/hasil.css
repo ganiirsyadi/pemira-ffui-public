@@ -1,0 +1,89 @@
+#hasil {
+  padding-top: 100px;
+}
+
+#hasil #title {
+  font-family: "Baloo 2", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 140%;
+  /* identical to box height, or 56px */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* maroon */
+  color: #8a4742;
+}
+
+#hasil #subtitle {
+  font-family: "Baloo 2", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  /* identical to box height, or 34px */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* cream */
+  color: #e6bb89;
+}
+
+#hasil .box {
+  margin-top: 52px;
+  max-width: 680px;
+}
+
+#hasil .box h3 {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  /* identical to box height, or 34px */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* maroon */
+  color: #8a4742;
+  margin-bottom: 24px;
+}
+
+#hasil .box canvas {
+  margin-bottom: 16px;
+}
+
+#hasil .box .dpt {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* identical to box height, or 34px */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* maroon */
+  color: #505050;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 575.98px) {
+  #hasil {
+    padding: 24px;
+    padding-top: 100px;
+  }
+  #hasil #title {
+    font-size: 28px !important;
+  }
+  #hasil #subtitle {
+    font-size: 20px !important;
+  }
+  #hasil .box h3 {
+    font-size: 16px !important;
+  }
+  #hasil .box {
+    width: 100%;
+  }
+}

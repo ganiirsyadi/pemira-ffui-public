@@ -1,0 +1,131 @@
+.profile {
+  margin-top: 64px;
+  background-image: url("../images/profile-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 24px;
+  padding-bottom: 48px;
+  h1 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 64px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+    font-feature-settings: "liga" off;
+
+    color: #8a4742;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .profile-row {
+    margin-bottom: 40px;
+    .profile-col {
+      h2 {
+        font-family: "Baloo 2", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 140%;
+        /* or 101px */
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #000000;
+      }
+      .card-profile {
+        margin-top: 160px;
+        background: #FFE3C1;
+        box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+        border-radius: 8px;
+        position: relative;
+        width: 220px;
+        padding: 20px 20px;
+        padding-top: 88px;
+        img {
+          position: absolute;
+          width: 165px;
+          height: 205px;
+          top: -120px;
+        }
+        h5 {
+          margin-top: 8px;
+          font-family: "Baloo 2", cursive;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 140%;
+          /* or 39px */
+
+          text-align: center;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+
+          color: #000000;
+          margin-bottom: 12px;
+        }
+        .btn {
+          padding: 6px 24px !important;
+        }
+        .btn-fill {
+          background-color: #a76e62;
+          &:hover {
+            background-color: #8a4742 !important;
+            opacity: 1;
+          }
+        }
+        .btn-border {
+          background-color: #FDFAE0;
+        }
+      }
+    }
+  }
+  .bottom-btn {
+    margin: auto;
+    width: 760px;
+  }
+}
+
+
+// Tablet
+@media (max-width: 768.98px) {
+  .profile {
+    .bottom-btn {
+      width: 680px;
+    }
+  }
+}
+
+// Phone
+@media (max-width: 575.98px) {
+  .profile {
+    padding: 24px;
+    h1 {
+      font-size: 28px;
+      line-height: 140%;
+      max-width: 75vw;
+    }
+    .profile-row {
+      flex-direction: column;
+      .profile-col {
+        margin-bottom: 24px;
+      }
+    }
+    .bottom-btn {
+      display: flex;
+      justify-content: center;
+      width: fit-content;
+      margin-bottom: 32px;
+      button {
+        margin-left: 12px;
+        margin-right: 12px;
+      }
+    }
+  }
+}

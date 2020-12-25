@@ -1,0 +1,52 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'home/css/profil_detail.css' %}" />
+{% endblock css %} 
+{% block title %}
+  Visi & Misi Calon
+{% endblock title %}
+{% block content %} {% include 'navbar.html' %}
+<div id="wrapper" class="d-flex align-items-center flex-column">
+  <div class="center">
+    <div class="detail-row d-flex justify-content-center align-items-start">
+      <div class="detail-col">
+        <h1 class="text-green">Visi :</h1>
+        <div class="box bg-green mb-3">
+          <p>
+            Menjadikan BPM FF UI sebagai lembaga yang berintegritas, kolaboratif dan aspiratif untuk memberikan manfaat bagi IKM FF UI.
+          </p>
+        </div>
+        <h1 class="text-green">Misi :</h1>
+        <div class="box bg-green">
+          <ol>
+            <li>
+              Optimalisasi kinerja fungsionaris BPM FF UI yang mengedepankan profesionalitas, tanggung jawab, serta integritas.
+            </li>
+            <li>
+              Harmonisasi dan optimalisasi tujuan pokok dan fungsi BPM FF UI.
+            </li>
+            <li>
+              Meningkatkan hubungan kolaboratif antar lembaga sehingga terbentuk kerjasama yang sinergis dan bermanfaat.
+            </li>
+            <li>
+              Internalisasi seluruh fungsionaris sehingga timbul rasa kekeluargaan dan kepemilikan.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <img
+        class="cover"
+        src="{% static 'home/images/profile/bpm3.png' %}"
+        alt=""
+      />
+    </div> 
+    <a
+      href="{% url 'home:profil_calon_bpm_url' %}"
+      class="btn btn-border align-self-start mt-4"
+      >Kembali</a
+    >
+  </div>
+</div>
+<footer id="social-only">
+  {% include 'footer_social_only.html' %}
+  {% include 'footer_mobile.html' %}
+</footer> {% endblock content %}

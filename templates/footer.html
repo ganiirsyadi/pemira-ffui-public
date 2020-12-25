@@ -1,0 +1,52 @@
+{% load static %}
+<footer class="d-flex flex-column align-items-center">
+  <h1>Butuh Bantuan?</h1>
+  <div class="d-flex help flex-lg-row flex-column justify-content-center mb-4">
+    <div class="help-box mr-lg-3">
+      <h3>Anda menemukan pelanggaran?</h3>
+      <div class="contact">
+        <p class="mb-2">
+          <b>Selinka E.H.</b> <br />
+          <a href="https://wa.me/+6281380880885">081380880885</a> &#8226;
+          <a href="http://line.me/ti/p/selinkaeptaky">selinkaeptaky</a>
+        </p>
+        <p>
+          <b>Laurentio Daniel C.P.P.</b> <br />
+          <a href="https://wa.me/+6287883706890">087883706890</a> &#8226;
+          <a href="http://line.me/ti/p/laurentio007">laurentio007</a>
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <img
+          class="triangel"
+          src="{% static 'home/images/vector-triangel.svg' %}"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="help-box ml-lg-3">
+      <h3>Anda mengalami masalah teknis?</h3>
+      <div class="contact">
+        <p class="mb-2">
+          <b>Guntur M.A.W.</b> <br />
+          <a href="https://wa.me/+6285777745476">085777745476</a> &#8226;
+          <a href="http://line.me/ti/p/alifwidayadi">alifwidayadi</a>
+        </p>
+        <p>
+          <b>M. Farhan R.</b><br />
+          <a href="https://wa.me/+6281908195133">081908195133</a> &#8226;
+          <a href="http://line.me/ti/p/levirivaelle">levirivaelle</a>
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <img
+          class="triangel"
+          src="{% static 'home/images/vector-triangel.svg' %}"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  {% include 'footer_social_only.html' %}
+  {% include 'footer_mobile.html' %}
+</footer>

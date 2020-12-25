@@ -1,0 +1,107 @@
+#otp {
+  margin-top: 52px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#otp h1 {
+  font-family: "Baloo 2", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140%;
+  /* or 67px */
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  /* maroon */
+  color: #8a4742;
+}
+
+#otp .info {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  /* Black Shades/Black */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#otp .info span {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+#otp .input-box {
+  background: #fdfae0;
+  opacity: 0.7;
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: fit-content;
+  padding: 20px 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+#otp .input-box input::-webkit-outer-spin-button,
+#otp .input-box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#otp .input-box input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#otp .input-box input {
+  background: none;
+  text-align: center;
+  border: none;
+  width: 252px;
+  border-bottom: 2px solid rgba(189, 142, 88, 0.6);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  padding-right: 20px;
+  padding-left: 28px;
+  padding-top: 0;
+  padding-bottom: 10px;
+  /* or 73px */
+  text-align: center;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#otp .input-box input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #bd8e58;
+}
+
+#otp form {
+  margin-bottom: 32px;
+}
+
+#otp #resend {
+  color: black !important;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  width: fit-content;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 575.98px) {
+  #otp {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
